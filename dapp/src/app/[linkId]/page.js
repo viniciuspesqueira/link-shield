@@ -2,7 +2,7 @@
 
 import {useState, useEffect} from "react";
 import { useParams } from "next/navigation";
-import { getLink } from "../services/Web3Service";
+import { getLink, payLink } from "../services/Web3Service";
 
 export default function Home() {
 

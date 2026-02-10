@@ -27,5 +27,5 @@ export async function payLink(linkId, valueInWei) {
     const contract = await connectContract();
     return contract.methods.payLink(linkId).send(
         { value: valueInWei}
-    );
+    )
 }
