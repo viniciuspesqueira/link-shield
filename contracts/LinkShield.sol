@@ -32,7 +32,7 @@ contract LinkShield {
     function addLink(string calldata url, string calldata linkId, uint256 fee) public {
         Link memory link = links[linkId];
         require(link.owner == address(0) || link.owner == msg.sender, "This linkId alread has an owner");
-        require(fee == 0 || fee >= comission, "Fee too low"); // Defined fee device to be free or greater than comission
+        require(fee == 0 || fee >= comission, "Fee too low"); // Fee don't to be free or lower than commission
 
         link.url = url;
         link.fee = fee;
