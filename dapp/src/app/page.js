@@ -25,7 +25,7 @@ export default function Home() {
       .then(() => {
         setUrl("");
         setFee("0");
-        setMessage(`Your link was created with success: http://localhost:3000/${linkId}`)
+        setMessage(`Your link was created with success: https://linkshield.viniciuspesqueira.dev/${linkId}`)
       })
       .catch(err => setMessage(err.message));
   }
